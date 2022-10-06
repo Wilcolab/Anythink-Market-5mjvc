@@ -1,5 +1,5 @@
 //TODO: seeds script should come here, so we'll be able to put some data in our local env
-// //TODO: seeds script should come here, so we'll be able to put some data in our local env
+
 
 var mongoose = require('mongoose');
 var UserModel = require('../models/User');
@@ -30,8 +30,7 @@ var names = ["KZndDJjSHx", "mTCDcPJFmR", "jpSXtHHfdy", "caYkMqxnYH", "RrDpPpXmKz
 //     var keys = Object.keys(obj);
 //     return obj[keys[keys.length * Math.random() << 0]];
 // };
-mongoose.connect(process.env.MONGODB_URI);
-// mongoose.connect("mongodb://127.0.0.1:27017/anythink")
+mongoose.connect("mongodb://127.0.0.1:27017/anythink")
 
 // const seed = () => {
 
