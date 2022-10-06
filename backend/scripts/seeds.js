@@ -30,7 +30,8 @@ var names = ["KZndDJjSHx", "mTCDcPJFmR", "jpSXtHHfdy", "caYkMqxnYH", "RrDpPpXmKz
 //     var keys = Object.keys(obj);
 //     return obj[keys[keys.length * Math.random() << 0]];
 // };
-mongoose.connect("mongodb://127.0.0.1:27017/anythink")
+mongoose.connect("mongodb://mongodb-node:27017/anythink-market");
+// mongoose.connect("mongodb://127.0.0.1:27017/anythink")
 
 // const seed = () => {
 
