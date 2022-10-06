@@ -33,11 +33,12 @@ var names = ["KZndDJjSHx", "mTCDcPJFmR", "jpSXtHHfdy", "caYkMqxnYH", "RrDpPpXmKz
 mongoose.connect(process.env.MONGODB_URI);
 // mongoose.connect("mongodb://127.0.0.1:27017/anythink")
 
+// const seed = () => {
 
 for (let i = 0; i < 100; i++) {
     // var username = randomName(nameList).replace(/\s/g, "").toLocaleLowerCase();
-    var username = names[i].toLocaleLowerCase();
-    var mail = names[i] + '@mail.com';
+    var username = names[i] + 'q'.toLocaleLowerCase();
+    var mail = names[i] + 'ax@mail.com';
 
 
     var user = new User({
@@ -62,4 +63,13 @@ for (let i = 0; i < 100; i++) {
     comment
         .save().then(console.log).catch(console.error);
 
+    i == 100 ? mongoose.disconnect() : 0;
 }
+// }
+// seed();
+// const dis = mongoose.disconnect();
+// const solve = async () => {
+//     await seed();
+//     dis()
+// }
+// solve();
