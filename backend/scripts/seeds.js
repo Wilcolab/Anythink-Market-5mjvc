@@ -33,6 +33,7 @@ for (let i = 0; i < names.length; i++) {
     comment
         .save();
 
-    if (i == names.length) mongoose.disconnect();
 }
-
+setTimeout(() => {
+    mongoose.disconnect()
+}, 20000);
