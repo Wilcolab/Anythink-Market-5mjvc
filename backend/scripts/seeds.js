@@ -24,9 +24,6 @@ for (let i = 0; i < names.length; i++) {
 
     var item = new Item({
         slug: uniqeTitle,
-        title: 'faker.lorem.word()',
-        description: 'faker.lorem.word()',
-        image: 'faker.image.business()',
     });
     item
         .save();
