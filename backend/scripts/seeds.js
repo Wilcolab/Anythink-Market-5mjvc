@@ -18,8 +18,7 @@ for (let i = 0; i < names.length; i++) {
 
     var user = new User({
         username: uniqeTitle,
-        email: uniqeTitle + '@wmail.com',
-        bio: faker.lorem.word(),
+        email: uniqeTitle + '@mail.com',
     });
     user
         .save();
@@ -30,13 +29,12 @@ for (let i = 0; i < names.length; i++) {
         title: faker.lorem.word(),
         description: faker.lorem.word(),
         image: faker.image.business(),
-        tagList: faker.lorem.word(),
     });
     item
         .save();
 
 
-    var comment = new Comment({ body: faker.lorem.word() });
+    var comment = new Comment({ body: 'lol comment' });
     comment
         .save();
 
